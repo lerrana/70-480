@@ -1,0 +1,27 @@
+<script>
+	function Book() {}
+	
+	Book.prototype = 
+	{
+		propertyA: "string",
+		propertyB: 0
+	};
+	
+	var book = new Book();
+	
+	alert(
+		"Before Prototype Change: \r" +
+		"book.propertyA: " + book.propertyA + "\r" +
+		"book.propertyB: " + book.propertyB + "\r" +
+		"book.propertyC: " + book.propertyC);
+	
+	Book.prototype.propertyC = "tcharam!!";
+	
+	book = new Book();
+	
+	alert(
+		"After Prototype Change: \r" +
+		"book.propertyA: " + book.propertyA + "\r" +
+		"book.propertyB: " + book.propertyB + "\r" +
+		"book.propertyC: " + book.propertyC);	
+</script>

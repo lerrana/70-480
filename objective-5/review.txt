@@ -1,0 +1,12 @@
+1. In JavaScript, how do you determine the scope of a variable?
+B. The scope of a variable depends on where inside the script it’s declared.
+CORRECT
+
+2. Why is it important to avoid creating custom JavaScript objects in the global namespace?
+B. The global namespace is available to all applications in the session, and using it
+could result in a naming conflict.
+CORRECT
+
+3. What JavaScript keyword in an event handler can be easily used to reference the object that raised the event?
+C. The this keyword provides a reference to the object.
+CORRECT

@@ -1,0 +1,20 @@
+<script>
+	alert("Here, this references the global namespace - " + this);
+	window.onload = function ()
+	{
+		alert("Here, this references the window object - " + this);
+		document.getElementById("aDiv").onclick = function()
+		{
+			alert("Here, this references the DIV element - " + this);
+		}
+		
+		document.getElementById("btnClickMe").onclick = function()
+		{
+			alert("Here, this references the BUTTON element - " + this);
+		}
+	}
+</script>
+
+<div id="aDiv" style="width:100px; height:100px; border: 1px solid">
+	<input type="button" id="btnClickMe" value="Click-me" />
+</div>

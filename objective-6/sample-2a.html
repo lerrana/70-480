@@ -1,0 +1,66 @@
+<script>
+	function Book() 
+	{
+		this.ISBN = "";
+		this.pagesLength = 0;
+		this.genre = "";
+		this.covering = "";
+		this.author = "";
+		this.currentPage = 1;
+		
+		this.setPage = function setPage(pageNum)
+		{
+			this.currentPage = pageNum;
+			this.updateForm();
+		};
+		
+		this.updateForm = function updateForm()
+		{
+			document.getElementById("isbn").setAttribute("value", this.ISBN);
+			document.getElementById("length").setAttribute("value", this.pagesLength);
+			document.getElementById("genre").setAttribute("value", this.genre);
+			document.getElementById("covering").setAttribute("value", this.covering);
+			document.getElementById("author").setAttribute("value", this.author);
+			document.getElementById("currentPage").setAttribute("value", this.currentPage);
+		};
+	}
+	
+	var book = new Book();
+	
+	window.onload = function()
+	{
+		book.ISBN = "55555555";
+		book.pagesLength = 560;
+		book.genre= "programming";
+		book.covering = "soft";
+		book.author = "John Doe";
+				
+		book.updateForm();
+		
+		document.getElementById("btnProperty").onclick = function()
+		{
+			book.myDynamicProperty = "Dynamic Property!!";
+			document.getElementById("dynamicProperty").setAttribute("value", book.myDynamicProperty);
+		};
+	}
+</script>
+
+ISBN: <input type="text" id="isbn" /> <br />
+Length: <input type="text" id="length" /> <br />
+Genre: <input type="text" id="genre" /> <br />
+Covering: <input type="text" id="covering" /> <br />
+Author: <input type="text" id="author" /> <br />
+Page: <input type="text" id="currentPage" /> <br /><br />
+
+<input type="button" id="btnProperty" value="Create a Dynamic Property" /> <br />
+Property:  <input type="text" id="dynamicProperty" /> <br /><br />
+
+<a href="#" onclick="book.setPage(1)" >1</a>
+<a href="#" onclick="book.setPage(2)" >2</a>
+<a href="#" onclick="book.setPage(3)" >3</a>
+<a href="#" onclick="book.setPage(4)" >4</a>
+<a href="#" onclick="book.setPage(5)" >5</a>
+
+
+
+

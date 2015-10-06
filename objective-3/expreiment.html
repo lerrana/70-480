@@ -1,0 +1,87 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<style>
+		div {
+			display: none;
+		}
+	</style>
+	<script>
+		window.onload = function()
+		{
+			document.getElementById("Question1").style.display = "block";
+		}
+		
+		function nextQuestion(button, nextIndex)
+		{
+			button.parentElement.style.display = "none";
+			document.getElementById("Question" + nextIndex).style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		A dynamic Questionnaire.
+	</header>
+	<section>
+		<article>
+			<hgroup>
+				<h1>Questionnaire</h1>
+				<h2>Answer the questions in order as they appear.</h2>
+			</hgroup>
+			<div id="Question1">
+				1. .... 
+				<input type="button" value="yes" onclick="nextQuestion(this, 2)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 3)" />
+			</div>
+			<div id="Question2">
+				2. ....
+				<input type="button" value="yes"value="yes" onclick="nextQuestion(this, 4)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 5)" />
+			</div>
+			<div id="Question3">
+				3. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 6)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 6)" />
+			</div>
+			<div id="Question4">
+				4. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 10)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 10)" />
+			</div>
+			<div id="Question5">
+				5. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 10)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 10)" />
+			</div>
+			<div id="Question6">
+				6. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 7)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 8)" />
+			</div>
+			<div id="Question7">
+				7. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 9)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 9)" />
+			</div>
+			<div id="Question8">
+				8. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 9)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 9)" />
+			</div>
+			<div id="Question9">
+				9. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 10)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 10)" />
+			</div>
+			<div id="Question10">
+				10. ....
+				<input type="button" value="yes" onclick="nextQuestion(this, 11)" />
+				<input type="button" value="no" onclick="nextQuestion(this, 11)" />
+			</div>
+			<div id="Question11">Questionnaire end, thank you.</div>
+		</article>
+	</section>
+</body>
+</html>

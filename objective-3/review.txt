@@ -1,0 +1,11 @@
+1. Absolute positioning positions an object relative to what?
+A. The top-left corner of the browser window.
+INCORRECT - B. Correct: Absolute positioning positions the element relative to its parent element.
+
+2. Which transformation enables you to change the size of an element?
+D. scale
+CORRECT
+
+3. Which syntax preserves the layout of the page when hiding an element in the DOM?
+D. visibility=’hidden’
+CORRECT

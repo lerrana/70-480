@@ -1,0 +1,26 @@
+
+
+<p>Our goal is to have 1000 users:</p>
+<span>0</span>
+<progress id="prg" value="200" max="1000"></progress>
+<span>1000</span>
+<p><input type="button" value="increase" onclick="javascript:updateProgress();"></p>
+
+
+<p>Data download is in progress, please wait patiently:</p>
+<progress max="5"></progress>
+
+
+<script>
+	var prgValue = 200;
+
+	function updateProgress()
+	{
+		var p = document.getElementById('prg');
+		
+		if (prgValue < p.max)
+			prgValue += 100;
+		
+		p.value = prgValue;
+	}
+</script>

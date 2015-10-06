@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<style>
+		#orange1 {
+			height: 225px;
+			width: 225px;
+			position: absolute;
+			left: 300px;
+			top: 300px;
+		}
+		.trans {
+			transform: scale(2) ;
+		}
+	</style>
+	<script>
+		window.onload = function ()
+		{
+			document.getElementById("orange1").onclick = function ()
+			{
+				this.classList.add("trans");
+			}
+		}
+	</script>
+</head>
+<body>
+	<img id="orange1" src="orange.jpg" style="position:relative"/>
+</body>
+</html>

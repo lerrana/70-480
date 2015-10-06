@@ -1,0 +1,19 @@
+1. When using the Web Storage API, where should you store data to ensure that it’s cleared when the user closes the browser?
+C. sessionStorage
+CORRECT
+
+2. What do you need to do to designate a page as available offline?
+C. Specify the manifest attribute on the HTML element.
+CORRECT
+
+3. Which of the following aren’t valid sections of the AppCache manifest?
+B. Session manifest
+CORRECT
+
+4. Which event is fired by the AppCache object when the cache download is complete?
+A. oncached
+CORRECT
+
+5. When using the Geolocation API, how do you configure the ability to use cached data?
+B. Set the maximumAge property to a non-zero value on the PositionOptions object.
+CORRECT

@@ -1,0 +1,47 @@
+<script>
+	var book = 
+	{
+		ISBN: "55555555",
+		length: 560,
+		genre: "programming",
+		covering: "soft",
+		author: "John Doe",
+		currentPage: 5,
+		setPage: function setPage(pageNum)
+		{
+			this.currentPage = pageNum;
+			this.updateForm();
+		},
+		updateForm: function updateForm()
+		{
+			document.getElementById("isbn").setAttribute("value", this.ISBN);
+			document.getElementById("length").setAttribute("value", this.length);
+			document.getElementById("genre").setAttribute("value", this.genre);
+			document.getElementById("covering").setAttribute("value", this.covering);
+			document.getElementById("author").setAttribute("value", this.author);
+			document.getElementById("currentPage").setAttribute("value", this.currentPage);
+		}
+	}
+	
+	window.onload = function()
+	{
+		book.updateForm();
+	}
+</script>
+
+ISBN: <input type="text" id="isbn" /> <br />
+Length: <input type="text" id="length" /> <br />
+Genre: <input type="text" id="genre" /> <br />
+Covering: <input type="text" id="covering" /> <br />
+Author: <input type="text" id="author" /> <br />
+Page: <input type="text" id="currentPage" /> <br /><br />
+
+<a href="#" onclick="book.setPage(1)" >1</a>
+<a href="#" onclick="book.setPage(2)" >2</a>
+<a href="#" onclick="book.setPage(3)" >3</a>
+<a href="#" onclick="book.setPage(4)" >4</a>
+<a href="#" onclick="book.setPage(5)" >5</a>
+
+
+
+
