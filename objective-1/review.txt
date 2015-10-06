@@ -1,0 +1,15 @@
+1. Which of the following keywords provide iterative control flow?
+C. for
+CORRECT
+
+2. Which of the following array methods combines two arrays?
+B. combine
+INCORRECT - D. Correct: The concat method combines the elements of two arrays into one array.
+
+3. Which iterative control syntax can guarantee that the loop is processed at least once?
+C. do…while loop
+CORRECT
+
+4. Which keyword is used to exit a loop?
+B. break
+CORRECT
