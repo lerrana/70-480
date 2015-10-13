@@ -1,0 +1,16 @@
+1. Which of the following is a valid WebSocket instantiation?
+C. wsConnection = new WebSocket(‘wss://studygroup.70480.com’,[‘soap’,’xmpp’]);
+CORRECT
+
+2. Which of the following statements properly handles the reception of data from a WebSocket?
+C. wsConnection.onmessage = function(msg){...};
+CORRECT
+
+3. Which list identifies the properties that need to be set up to make an AJAX call?
+B. url, cache, datatype, success
+INCORRECT - C. Correct: url, datatype, and onsuccess are required.
+
+4. Why is wiring up events with jQuery easier?
+A. It allows you to assign the event listener to many elements at once via the selector
+syntax.
+CORRECT
