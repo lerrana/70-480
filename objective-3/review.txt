@@ -1,0 +1,11 @@
+1. Which statement correctly describes the proper error handling using try…catch…finally blocks?
+A. Proper error handling allows code processing to continue and to provide appropriate user feedback.
+CORRECT
+
+2. Which of the following isn’t a property of the exception object?
+B. description
+CORRECT
+
+3. Why is checking for null a good practice?
+A. Checking for null prevents the use of an object before it’s initialized.
+CORRECT
