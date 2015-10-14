@@ -1,0 +1,12 @@
+1. Which of the following is a valid JSON string?
+D. {firstName: “Rick”, lastname: “Delorme”, hairColor: “brown”, eyeColor: “brown”}
+CORRECT
+
+2. With the XMLHttpRequest object, which of the following properties provides the
+response in a human readable format?
+C. responseText
+CORRECT
+
+3. At which stage during an XMLHttpRequest are user credentials sent to the server?
+B. When the request is sent
+INCORRECT - D. Correct: Credentials are passed only if the server requests them with a return code 401.

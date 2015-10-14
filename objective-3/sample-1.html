@@ -1,0 +1,28 @@
+<script>
+	var XMLHTTPReadyState_COMPLETE = 4;
+	
+	window.onload = function ()
+	{
+		var xReq = new XMLHttpRequest();
+		var results = document.getElementById("results");
+		
+		xReq.open("GET", "http://www.uol.com.br", true);
+		
+		xReq.onreadystatechange = function (e)
+		{
+			if (xReq.readyState == XMLHTTPReadyState_COMPLETE)
+			{
+				if (xReq.status = "200")
+					results.innerHtml = xReq.response;
+				else
+					results.innerHtml = xReq.statusText;
+			}
+		}		
+				
+		xReq.send(null);
+	}
+</script>
+
+<h1>Here is the site</h1>
+
+<div id="results"></div>
