@@ -1,0 +1,12 @@
+1. Which of the following regular expression characters denote the end of the string?
+D. &
+INCORRECT - A. Correct: The $ sign denotes the end of the string.
+
+2. Which of the following sandbox attributes allows the iFrame to load content from the
+containing HTML document?
+D. allow-top-navigation
+CORRECT
+
+3. Which function should never be used to run JavaScript?
+C. eval
+CORRECT

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script>
+		window.onload = function()
+		{
+			txt = document.getElementById("txt");
+			btn = document.getElementById("btn");
+			
+			btn.onclick = function()
+			{
+				var text = txt.value;
+				var regex = /\d/;
+
+				if (regex.test(text))
+					alert("OK");
+				else
+					alert("NOK");
+			}			
+		}
+	</script>
+</head>
+<body>
+	<input id="txt" type="text" pattern="[0-9]" />
+	<input id="btn" type="button" value="test" onclick="btn_click()" />
+</body>
+</html>
