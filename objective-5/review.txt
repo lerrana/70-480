@@ -1,0 +1,19 @@
+1. Which of the following isn’t a valid web worker operation?
+B. onmessage
+INCORRECT - C. Correct: close isn’t a method on the web worker.
+
+2. Which method cancels a web worker?
+B. terminate
+CORRECT
+
+3. Where must you place the JavaScript code to run in the context of a web worker?
+C. In its own JavaScript file
+CORRECT
+
+4. How many web workers/subworkers can run concurrently?
+C. A limitless number of workers
+CORRECT
+
+5. To have a script run continually every 30 seconds, which line of code should be used?
+D. setInterval(function(){ worker.postMessage(“”);}, 30000);
+CORRECT
