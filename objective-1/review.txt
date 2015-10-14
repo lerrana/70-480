@@ -1,0 +1,20 @@
+1. Which input control is better suited for allowing users to make multiple selections?
+C. checkbox
+CORRECT
+
+2. Which input control is designed to allow users to enter secure information in a way
+that keeps others from seeing what’s typed?
+D. password
+CORRECT
+
+3. Which input control posts form data to a server?
+B. Submit
+CORRECT
+
+4. Which of the following declarations are valid ways to make a text control non-editable?
+D. <input type=”text” readonly/>
+CORRECT
+
+5. How can you ensure that all necessary fields are populated before a form can be submitted?
+C. Add the required attribute on each control so that users get a message that the field is required.
+CORRECT
