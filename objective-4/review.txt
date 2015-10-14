@@ -1,0 +1,12 @@
+1. Which of the following code lines is the correct way create an object from a JSON
+string stored in a variable called jsonString?
+C. var o = JSON.parse(jsonString);
+CORRECT
+
+2. Which of the following code lines allows an XMLHttpRequest to return binary data?
+D. request.responseType = ‘blob’;
+CORRECT
+
+3. How do you control what’s sent to the server when submitting a form?
+B. Handle the submit event of the form.
+CORRECT

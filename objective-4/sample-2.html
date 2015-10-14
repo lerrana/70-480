@@ -1,0 +1,11 @@
+<script>
+	var xReq = new XMLHttpRequest();
+	xReq.open("GET", "orange.jpg", true);
+	xReq.responseType = 'blob';
+	xReq.send(null);
+	var blob = xReq.response;
+	document.getElementById("result").src = URL.createObjectURL(blob);
+</script>
+
+
+<img id="result" />
